@@ -1,2 +1,1 @@
-export default function core() {
-}
+export default function core() {}

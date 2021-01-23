@@ -3,19 +3,19 @@ module.exports = {
     node: true,
     browser: true,
     es6: true,
-    "jest/globals": true,
+    'jest/globals': true,
   },
-  extends: ["eslint:recommended", "plugin:jest/recommended"],
+  extends: ['eslint:recommended', 'plugin:jest/recommended'],
   parserOptions: {
     ecmaVersion: 2019,
-    sourceType: "module",
+    sourceType: 'module',
   },
   rules: {},
-  plugins: ["svelte3", "jest"],
+  plugins: ['svelte3', 'jest'],
   overrides: [
     {
       files: ['*.svelte'],
-      processor: 'svelte3/svelte3'
-    }
+      processor: 'svelte3/svelte3',
+    },
   ],
 };
