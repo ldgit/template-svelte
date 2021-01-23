@@ -20,7 +20,7 @@ Just copy everything minus `.git` into a new project folder:
 
 - Starting inside this folder: `rsync -r --exclude=.git ./. ../new-svelte-project`
 - `cd ../new-svelte-project`
-- `npm install`
+- `npm ci`
 
 To start development:
 
