@@ -5,6 +5,7 @@ Template for quick start with Svelte frontend library.
 Uses:
 - [Svelte](https://svelte.dev/)
 - [Jest](https://jestjs.io/) for testing
+- [ESLint](https://eslint.org/)
 
 ## Usage
 
