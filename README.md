@@ -18,8 +18,9 @@ Uses:
 
 Just copy everything minus `.git` into a new project folder:
 
-- Starting inside this folder: `rsync -r --exclude=.git ./. ../new-svelte-project`
+- Starting inside this folder: `rsync -r --exclude=.git --exclude=node_modules ./. ../new-svelte-project`
 - `cd ../new-svelte-project`
+- `git init`
 - `npm ci`
 
 To start development:
