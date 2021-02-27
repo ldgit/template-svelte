@@ -176,13 +176,20 @@ module.exports = {
   // watchman: true,
 
   // A map from regular expressions to paths to transformers
+  // See https://github.com/mihar-22/svelte-jester#typescript for svelte typescript instructions
   transform: {
     '^.+\\.js$': 'babel-jest',
-    '^.+\\.svelte$': 'svelte-jester',
+    '^.+\\.ts$': 'babel-jest',
+    '^.+\\.svelte$': [
+      'svelte-jester',
+      {
+        preprocess: 'src/test/svelte.config.js',
+      },
+    ],
   },
 
   // An array of file extensions your modules use
-  moduleFileExtensions: ['js', 'svelte'],
+  moduleFileExtensions: ['js', 'svelte', 'ts'],
 
   // A list of paths to modules that run some code to configure or set up the testing framework before each test
   setupFilesAfterEnv: ['@testing-library/jest-dom/extend-expect'],
