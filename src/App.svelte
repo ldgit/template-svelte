@@ -1,7 +1,7 @@
-<script>
+<script lang="ts">
 import core from './core/core';
 
-export let name;
+export let name: string;
 
 core();
 </script>
